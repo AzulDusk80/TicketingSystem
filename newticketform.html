@@ -1,0 +1,42 @@
+<div class='container-fluid'>
+    <h4>Add New Ticket</h4>
+    <form action='index.php?mode=addNewTicket' method='post'>
+        <table class='table'>
+            <tr>
+                <td>Customer ID:</td><td><input type='text' name="customerID" required
+                    placeholder='Enter customer ID'></td>
+            </tr>
+            <tr>
+                <td>Issue:</td>
+                <td>
+                    <select name="category">
+                        <option value='Computer'>Computer</option>
+                        <option value='Keyboard'>Keyboard</option>
+                        <option value='Phone'>Phone</option>
+                        <option value='Mouse'>Mouse</option>
+                        <option value='Wifi'>Wifi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Device Brand:</td><td><input type='text' name="deviceBrand" required
+                    placeholder='Enter device brand'></td>
+            </tr>
+            <tr>
+                <td>Device Model:</td><td><input type='text' name="deviceModel" required
+                    placeholder='Enter device model'></td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td>
+                    <textarea name="description" placeholder="Enter description here" required rows="3" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Availability:</td><td><input type='text' name="availability" required
+                    placeholder='Enter availability'></td>
+            </tr>
+        </table>
+        <p><button type='submit' class="btn btn-primary">Create Ticket</button></p>
+    </form>
+</div>
